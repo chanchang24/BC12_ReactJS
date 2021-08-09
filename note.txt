@@ -1,0 +1,24 @@
++ List and Key
+    - Có 1 cái list, key là cái unit không thể trùng, không nên để key={index}
++ Props
+    - Nên có PropsType, để đồng nhất
++ Cơ chế virtual dom react. reconciliation react.
++ State ở đâu setState ở đó
++ Truyền từ con lên cha: Tạo 1 callback function(), quy định trả về một giá trị, phải truyền Props qua từng cấp, + State được gọi hàm setState trong 1 function rồi Prop qua các cấp
++ Khác nhau giữa State và Prop
+    - Cả 2 đều quản lý trao đổi dữ liệu
+    - Khác nhau:
+        State toàn quyền quản lý thay đổi dữ liệu
+        Prop chỉ trao đổi truyền xuống, Undirectional data flow
++ Redux: Thư viện quản lý State(Global state) không phải local state
+    - Redux diagram flow: UI -> dispatch Action -> Store(Reducer tiếp nhận và xử lý yêu cầu) -> cho ra data mới return state mới -> Component thấy State mới sẽ ReRender lại UI (1 chiều)
++ SetUp Redux 
+    - npm i redux react-redux
+    - tạo Store -> folder Reducer và file index.js
+    - Conect App đến Store từ file index.js src (import store và {Provider})
++ Lúc nào cũng có 3 folder actions, reducers, constants 
++ ProductList truyền data vào từng item, item dùng dispatch lên store reducer
++ Lấy data từ store về: MapStateToProps và import default connect shoppingList
++ Đẩy data từ component lên store: mapDispatchToProps
++ Type: để gọi đến action muốn chuyền đi -> Sử dụng switch case bên reducer
++ Hình ảnh render trong component thì bỏ trong Public với đường dẫn ./
