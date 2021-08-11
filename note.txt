@@ -22,3 +22,5 @@
 + Đẩy data từ component lên store: mapDispatchToProps
 + Type: để gọi đến action muốn chuyền đi -> Sử dụng switch case bên reducer
 + Hình ảnh render trong component thì bỏ trong Public với đường dẫn ./
+
++ Stateful(class component): component có quản lý state vs StateLess(functional component): chỉ nhận props

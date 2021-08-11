@@ -14,7 +14,9 @@ import './App.css';
 // import ParentComponent from './lesson-4/demo-props/ParentComponent';
 // import DemoChildrenProps from './lesson-4/demo-children-props/DemoChildrenProps';
 // import ShoesShop from './lesson-4/shoes-shop/ShoesShop';
-import ShoesShopRedux from './lesson-5-6-7/shoes-shop-redux/ShoesShopRedux';
+// import ShoesShopRedux from './lesson-5-6-7/shoes-shop-redux/ShoesShopRedux';
+import GameXucXac from './lesson-5-6-7/game-xuc-xac-redux/GameXucXac';
+
 
 function App() {
   return (
@@ -63,7 +65,10 @@ function App() {
         {/* <ShoesShop /> */}
 
         {/* Shoes Shop - Redux */}
-        <ShoesShopRedux />
+        {/* <ShoesShopRedux /> */} 
+
+        {/* Game Xuc Xac */}
+        <GameXucXac/>
     </div>
   );
 }
