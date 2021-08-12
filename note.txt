@@ -15,7 +15,9 @@
 + SetUp Redux 
     - npm i redux react-redux
     - tạo Store -> folder Reducer và file index.js
-    - Conect App đến Store từ file index.js src (import store và {Provider})
+    - Conect App đến Store từ file index.js src (import store và {Provider}). Bọc App lại Provider
+    - import reducer vào index.js project import { createStore, combineReducers } from 'redux';
+    - tool : window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
 + Lúc nào cũng có 3 folder actions, reducers, constants 
 + ProductList truyền data vào từng item, item dùng dispatch lên store reducer
 + Lấy data từ store về: MapStateToProps và import default connect shoppingList
@@ -24,3 +26,4 @@
 + Hình ảnh render trong component thì bỏ trong Public với đường dẫn ./
 
 + Stateful(class component): component có quản lý state vs StateLess(functional component): chỉ nhận props
++ Form && validation (thư viện formik yup )
