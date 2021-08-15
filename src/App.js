@@ -1,5 +1,6 @@
 import './App.css';
-import DemoHandleForm from './lesson-8/handle-form/DemoHandleForm';
+import DemoFormValidation from './lesson-8/handle-form/DemoFormValidation';
+// import DemoHandleForm from './lesson-8/handle-form/DemoHandleForm';
 // import DemoLifeCycle from './lesson-8/life-cycle/DemoLifeCycle';
 // import DemoDataBinding from './lesson-1/data-binding/DemoDataBinding';
 // import ClassBasedComponent from './lesson-1/demo-component/ClassBasedComponent';
@@ -77,7 +78,8 @@ function App() {
         {/* <DemoLifeCycle/> */}
 
         {/* Handel Form */}
-        <DemoHandleForm/>
+        {/* <DemoHandleForm/> */}
+        <DemoFormValidation/>
     </div>
   );
 }

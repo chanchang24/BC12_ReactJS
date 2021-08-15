@@ -3,10 +3,11 @@ import React, { Component } from 'react'
 
 export default class DemoHandleForm extends Component {
     state={
+        // formik+ yup
         email: '',
         password: '',
     };
-    // Lợi dụng name giống input có sẵn lấy về rồi làm key
+    // Lợi dụng name input đặt giống state có sẵn lấy về rồi làm key
     handleOnChange = event => {
         console.log(event.target.name, event.target.value);
         const{name, value}=event.target;
@@ -17,6 +18,7 @@ export default class DemoHandleForm extends Component {
         });
     }
     handleSumit = event => {
+        //chặn gửi form đi
         event.preventDefault();
         console.log('submitted');
         console.log(this.state);
